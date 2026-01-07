@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projets
+description: Mes projets.
 ---
 
 # Mes projets

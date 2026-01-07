@@ -1,8 +1,6 @@
 title: Portfolio Christopher Cremona
-description: Portfolio personnel et professionnel
-email: christowow130@hotmail.fr
-github_username: cremonachristopher
-linkedin_username: christopher-cremona-b614b7398
+description: Portfolio professionnel de Christopher Cremona
+theme: jekyll-theme-primer
 
 header_pages:
   - index.md
@@ -27,3 +25,5 @@ minima:
     - title: "LinkedIn Profile"
       icon: linkedin
       url: "https://www.linkedin.com/in/christopher-cremona-b614b7398/"
+plugins:
+  - jekyll-seo-tag

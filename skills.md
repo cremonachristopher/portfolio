@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Compétences
+description: Mes compétences techniques et professionnelles.
 ---
 
 ### Langages

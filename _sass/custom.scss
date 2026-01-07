@@ -1,44 +1,37 @@
-/* =====================================================
-   PORTFOLIO – STYLE GLOBAL ACCESSIBLE
-   Compatible Jekyll + Minima + Markdown
-   ===================================================== */
-
-/* ---------- Variables ---------- */
+/* Variables */
 :root {
   --bg-gradient-start: #f8fafc;
   --bg-gradient-end: #eef2f7;
   --card-bg: rgba(255, 255, 255, 0.95);
-  --text-main: #0f172a;        /* contraste élevé */
+  --text-main: #0f172a;
   --text-muted: #475569;
   --accent: #2563eb;
-  --accent-hover: #1e40af;     /* hover plus foncé pour contraste */
+  --accent-hover: #1e40af;
   --accent-soft: #dbeafe;
   --border: #e5e7eb;
 }
 
-/* ---------- Global ---------- */
+/* Global */
 html, body {
-  background: linear-gradient(180deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+  background: linear-gradient(180deg, var(--bg-gradient-start), var(--bg-gradient-end));
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
   line-height: 1.75;
   font-size: 16px;
   color: var(--text-main);
 }
 
-/* ---------- Header ---------- */
+/* Header */
 .site-header {
   background: rgba(255,255,255,0.85);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
-
 .site-title { font-weight: 700; }
 .site-nav a {
   color: var(--text-muted);
   margin-left: 1rem;
   font-weight: 500;
 }
-
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-hover);
@@ -46,28 +39,26 @@ html, body {
   outline-offset: 2px;
 }
 
-/* ---------- Page content (cartes) ---------- */
+/* Page content */
 .page-content {
   max-width: 900px;
   margin: 3.5rem auto;
   padding: 3rem 2.5rem;
-  background-color: var(--card-bg) !important;
+  background-color: var(--card-bg);
   border-radius: 20px;
   box-shadow: 0 40px 80px rgba(0,0,0,0.08);
 }
 
-/* ---------- Titres ---------- */
+/* Titres */
 h1, h2, h3 { font-weight: 600; color: var(--text-main); }
 h1 { font-size: 2.8rem; margin-bottom: 1.2rem; }
 h2 { font-size: 1.7rem; margin-top: 3.5rem; margin-bottom: 1.2rem; position: relative; padding-bottom: 0.5rem; }
 h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 56px; height: 3px; background: var(--accent); border-radius: 2px; }
 h3 { font-size: 1.25rem; margin-top: 2rem; }
 
-/* ---------- Texte ---------- */
+/* Texte & listes */
 p { color: var(--text-muted); margin-bottom: 1.4rem; }
 strong { font-weight: 600; color: var(--text-main); }
-
-/* ---------- Listes ---------- */
 ul {
   background-color: #f9fafb;
   padding: 1.2rem 1.6rem;
@@ -76,7 +67,7 @@ ul {
 }
 li { margin-bottom: 0.5rem; }
 
-/* ---------- Blockquote ---------- */
+/* Blockquote */
 blockquote {
   margin: 3rem 0;
   padding: 1.4rem 1.8rem;
@@ -87,13 +78,12 @@ blockquote {
   color: var(--text-main);
 }
 
-/* ---------- Liens et boutons ---------- */
+/* Liens et boutons */
 a, .button {
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
 }
-
 a:hover, a:focus, .button:hover, .button:focus {
   color: var(--accent-hover);
   text-decoration: underline;
@@ -101,14 +91,13 @@ a:hover, a:focus, .button:hover, .button:focus {
   outline-offset: 2px;
 }
 
-/* ---------- Footer ---------- */
+/* Footer */
 .site-footer {
   text-align: center;
   margin-top: 5rem;
   font-size: 0.9rem;
   color: var(--text-muted);
 }
-
 .site-footer::before {
   content: "";
   display: block;
@@ -118,12 +107,10 @@ a:hover, a:focus, .button:hover, .button:focus {
   margin: 0 auto 2rem;
   border-radius: 2px;
 }
-
 .site-footer a {
   color: var(--accent);
   font-weight: 500;
 }
-
 .site-footer a:hover,
 .site-footer a:focus {
   color: var(--accent-hover);
@@ -132,7 +119,7 @@ a:hover, a:focus, .button:hover, .button:focus {
   outline-offset: 2px;
 }
 
-/* ---------- Responsive ---------- */
+/* Responsive */
 @media (max-width: 768px) {
   .page-content { padding: 2.2rem 1.5rem; margin: 2rem 1rem; }
   h1 { font-size: 2.2rem; }

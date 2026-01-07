@@ -1,6 +1,7 @@
 ---
 layout: default
 title: À propos
+description: Mon parcours, mes compétences et mes expériences.
 ---
 
 # À propos de moi

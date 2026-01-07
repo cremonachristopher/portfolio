@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accueil
+description: Portfolio de Christopher Cremona, développeur web.
 ---
 
 # Bienvenue sur mon Portfolio
