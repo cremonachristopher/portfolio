@@ -1,17 +1,22 @@
-/* Variables */
+/* =====================================================
+   PORTFOLIO – STYLE MODERNE ET ACCESSIBLE
+   Compatible Jekyll + Primer + Markdown
+   ===================================================== */
+
+/* ---------- Variables ---------- */
 :root {
-  --bg-gradient-start: #f8fafc;
-  --bg-gradient-end: #eef2f7;
+  --bg-gradient-start: #f8fafc;       /* clair pour fond */
+  --bg-gradient-end: #e0e7ff;         /* gradient doux */
   --card-bg: rgba(255, 255, 255, 0.95);
-  --text-main: #0f172a;
-  --text-muted: #475569;
-  --accent: #2563eb;
-  --accent-hover: #1e40af;
-  --accent-soft: #dbeafe;
+  --text-main: #0f172a;               /* texte principal */
+  --text-muted: #475569;              /* texte secondaire */
+  --accent: #4f46e5;                  /* couleur accent */
+  --accent-hover: #4338ca;            /* accent hover */
+  --accent-soft: #dbeafe;             /* pour blockquote */
   --border: #e5e7eb;
 }
 
-/* Global */
+/* ---------- Global ---------- */
 html, body {
   background: linear-gradient(180deg, var(--bg-gradient-start), var(--bg-gradient-end));
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
@@ -20,18 +25,20 @@ html, body {
   color: var(--text-main);
 }
 
-/* Header */
+/* ---------- Header ---------- */
 .site-header {
   background: rgba(255,255,255,0.85);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
+
 .site-title { font-weight: 700; }
 .site-nav a {
   color: var(--text-muted);
   margin-left: 1rem;
   font-weight: 500;
 }
+
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-hover);
@@ -39,26 +46,28 @@ html, body {
   outline-offset: 2px;
 }
 
-/* Page content */
+/* ---------- Page content (cartes) ---------- */
 .page-content {
   max-width: 900px;
-  margin: 3.5rem auto;
+  margin: 3rem auto;
   padding: 3rem 2.5rem;
   background-color: var(--card-bg);
   border-radius: 20px;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.08);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
 }
 
-/* Titres */
+/* ---------- Titres ---------- */
 h1, h2, h3 { font-weight: 600; color: var(--text-main); }
 h1 { font-size: 2.8rem; margin-bottom: 1.2rem; }
-h2 { font-size: 1.7rem; margin-top: 3.5rem; margin-bottom: 1.2rem; position: relative; padding-bottom: 0.5rem; }
+h2 { font-size: 1.7rem; margin-top: 3rem; margin-bottom: 1rem; position: relative; padding-bottom: 0.5rem; }
 h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 56px; height: 3px; background: var(--accent); border-radius: 2px; }
 h3 { font-size: 1.25rem; margin-top: 2rem; }
 
-/* Texte & listes */
+/* ---------- Texte ---------- */
 p { color: var(--text-muted); margin-bottom: 1.4rem; }
 strong { font-weight: 600; color: var(--text-main); }
+
+/* ---------- Listes ---------- */
 ul {
   background-color: #f9fafb;
   padding: 1.2rem 1.6rem;
@@ -67,7 +76,7 @@ ul {
 }
 li { margin-bottom: 0.5rem; }
 
-/* Blockquote */
+/* ---------- Blockquote ---------- */
 blockquote {
   margin: 3rem 0;
   padding: 1.4rem 1.8rem;
@@ -78,12 +87,13 @@ blockquote {
   color: var(--text-main);
 }
 
-/* Liens et boutons */
+/* ---------- Liens et boutons ---------- */
 a, .button {
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
 }
+
 a:hover, a:focus, .button:hover, .button:focus {
   color: var(--accent-hover);
   text-decoration: underline;
@@ -91,13 +101,16 @@ a:hover, a:focus, .button:hover, .button:focus {
   outline-offset: 2px;
 }
 
-/* Footer */
+/* ---------- Footer ---------- */
 .site-footer {
   text-align: center;
   margin-top: 5rem;
+  padding: 2rem 1rem;
+  background-color: rgba(31, 41, 55, 0.9); /* gris foncé */
+  color: #fff;
   font-size: 0.9rem;
-  color: var(--text-muted);
 }
+
 .site-footer::before {
   content: "";
   display: block;
@@ -107,21 +120,22 @@ a:hover, a:focus, .button:hover, .button:focus {
   margin: 0 auto 2rem;
   border-radius: 2px;
 }
+
 .site-footer a {
-  color: var(--accent);
+  color: #fbbf24; /* accent visible */
   font-weight: 500;
 }
 .site-footer a:hover,
 .site-footer a:focus {
-  color: var(--accent-hover);
+  color: #f59e0b;
   text-decoration: underline;
-  outline: 3px solid var(--accent-hover);
+  outline: 2px solid #f59e0b;
   outline-offset: 2px;
 }
 
-/* Responsive */
+/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  .page-content { padding: 2.2rem 1.5rem; margin: 2rem 1rem; }
+  .page-content { padding: 2rem 1rem; margin: 2rem 1rem; }
   h1 { font-size: 2.2rem; }
-  h2 { font-size: 1.5rem; }
+  h2 { font-size: 1.4rem; }
 }
