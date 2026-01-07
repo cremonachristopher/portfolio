@@ -1,52 +1,75 @@
-/* ---------- Global ---------- */
+/* =========================
+   Portfolio – Style pro
+   ========================= */
+
+/* -------- Variables couleurs -------- */
+:root {
+  --text-main: #1f2937;
+  --text-secondary: #4b5563;
+  --accent: #2563eb;
+  --background: #fafafa;
+  --border-light: #e5e7eb;
+}
+
+/* -------- Global -------- */
 body {
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
-  line-height: 1.7;
-  background-color: #fafafa;
+  background-color: var(--background);
+  color: var(--text-main);
+  line-height: 1.75;
+  font-size: 16px;
 }
 
-/* ---------- Contenu ---------- */
-.wrapper {
-  max-width: 900px;
-  padding: 2rem 1rem;
-}
-
+/* -------- Zone de contenu -------- */
 .page-content {
-  font-size: 1.05rem;
+  max-width: 900px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
 }
 
-/* ---------- Titres ---------- */
+/* -------- Titres -------- */
 h1, h2, h3 {
   font-weight: 600;
-  color: #1f2937;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 1.6rem;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 0.4rem;
 }
 
 h3 {
   font-size: 1.2rem;
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
 }
 
-/* ---------- Liens ---------- */
+/* -------- Paragraphes -------- */
+p {
+  color: var(--text-secondary);
+  margin-bottom: 1.2rem;
+}
+
+/* -------- Liens -------- */
 a {
-  color: #2563eb;
+  color: var(--accent);
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Listes ---------- */
+/* -------- Listes -------- */
 ul {
   padding-left: 1.2rem;
 }
@@ -55,21 +78,56 @@ li {
   margin-bottom: 0.4rem;
 }
 
-/* ---------- Blocs ---------- */
-hr {
-  margin: 3rem 0;
-}
-
+/* -------- Blocs citations -------- */
 blockquote {
-  border-left: 4px solid #2563eb;
+  border-left: 4px solid var(--accent);
   padding-left: 1rem;
-  color: #4b5563;
+  margin: 2rem 0;
+  color: var(--text-secondary);
   font-style: italic;
 }
 
-/* ---------- Footer ---------- */
-.site-footer {
-  font-size: 0.9rem;
-  color: #6b7280;
+/* -------- Séparateurs -------- */
+hr {
+  margin: 3.5rem 0;
+  border: none;
+  border-top: 1px solid var(--border-light);
 }
 
+/* -------- Navigation (Minima) -------- */
+.site-header {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.site-nav a {
+  color: var(--text-secondary);
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+/* -------- Footer -------- */
+.site-footer {
+  border-top: 1px solid var(--border-light);
+  margin-top: 4rem;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .page-content {
+    padding: 2rem 1rem;
+  }
+}
