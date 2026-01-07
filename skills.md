@@ -7,7 +7,7 @@ title: Compétences
 - HTML
 - CSS
 - JavaScript
-- Python
+- PHP
 
 ### Outils
 - Git / GitHub

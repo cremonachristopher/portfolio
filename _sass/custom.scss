@@ -1,27 +1,28 @@
-/* ==============================
-   Portfolio – Style professionnel
-   ============================== */
+/* =====================================================
+   PORTFOLIO – STYLE GLOBAL PROFESSIONNEL
+   Compatible Jekyll + Minima + Markdown
+   ===================================================== */
 
 /* ---------- Variables ---------- */
 :root {
-  --bg: #f9fafb;
-  --surface: #ffffff;
-  --text-main: #111827;
-  --text-muted: #4b5563;
+  --bg-gradient-start: #f8fafc;
+  --bg-gradient-end: #eef2f7;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --text-main: #0f172a;
+  --text-muted: #475569;
   --accent: #2563eb;
   --accent-soft: #dbeafe;
   --border: #e5e7eb;
 }
 
-/* ---------- Global ---------- */
-/* ---------- Background global ---------- */
-body {
-    background: linear-gradient(
+/* ---------- Reset Minima ---------- */
+html, body {
+  background: linear-gradient(
     180deg,
-    #f8fafc 0%,
-    #f1f5f9 100%
-  );
-  background-color: var(--bg);
+    var(--bg-gradient-start) 0%,
+    var(--bg-gradient-end) 100%
+  ) !important;
+
   color: var(--text-main);
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
   line-height: 1.75;
@@ -30,10 +31,9 @@ body {
 
 /* ---------- Header ---------- */
 .site-header {
-  background-color: var(--surface);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
 }
 
 .site-title {
@@ -44,99 +44,104 @@ body {
 .site-nav a {
   color: var(--text-muted);
   font-weight: 500;
+  margin-left: 1rem;
 }
 
 .site-nav a:hover {
   color: var(--accent);
 }
 
-/* ---------- Contenu ---------- */
+/* ---------- Carte principale ---------- */
 .page-content {
-  /* ---------- Carte principale ---------- */
-  background-color: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
   max-width: 900px;
-  margin: auto;
-  padding: 3rem 1.5rem;
+  margin: 3.5rem auto;
+  padding: 3rem 2.5rem;
+
+  background-color: var(--card-bg) !important;
+  border-radius: 20px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
 }
 
 /* ---------- Titres ---------- */
 h1, h2, h3 {
   font-weight: 600;
   letter-spacing: -0.02em;
+  color: var(--text-main);
 }
 
 h1 {
   font-size: 2.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 h2 {
-   position: relative;
   font-size: 1.7rem;
   margin-top: 3.5rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
 }
-h2::before {
+
+h2::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
-  width: 48px;
+  bottom: 0;
+  width: 56px;
   height: 3px;
   background-color: var(--accent);
   border-radius: 2px;
 }
 
-strong {
-  color: var(--text-main);
-  font-weight: 600;
-}
-
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-top: 2rem;
 }
 
 /* ---------- Texte ---------- */
 p {
   color: var(--text-muted);
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.4rem;
 }
 
 /* ---------- Liens ---------- */
 a {
   color: var(--accent);
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Listes ---------- */
+/* ---------- Mise en valeur ---------- */
+strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* ---------- Listes (skills / projets) ---------- */
 ul {
-    background-color: #f9fafb;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  padding-left: 1.2rem;
+  background-color: #f9fafb;
+  padding: 1.2rem 1.6rem;
+  border-radius: 14px;
+  margin: 1.5rem 0;
 }
 
 li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
-/* ---------- Citations / objectifs ---------- */
+/* ---------- Citations / Objectifs ---------- */
 blockquote {
-  margin: 2.5rem 0;
-  padding: 1rem 1.5rem;
+  margin: 3rem 0;
+  padding: 1.4rem 1.8rem;
   background-color: var(--accent-soft);
   border-left: 4px solid var(--accent);
-  color: var(--text-main);
+  border-radius: 10px;
   font-style: italic;
+  color: var(--text-main);
 }
 
 /* ---------- Séparateurs ---------- */
@@ -148,51 +153,44 @@ hr {
 
 /* ---------- Footer ---------- */
 .site-footer {
-  border-top: 1px solid var(--border);
+  background: transparent;
   margin-top: 5rem;
-  padding-top: 2rem;
-  font-size: 0.9rem;
+  text-align: center;
   color: var(--text-muted);
-   background-color: transparent;
-  margin-top: 5rem;
+  font-size: 0.9rem;
 }
+
 .site-footer::before {
   content: "";
   display: block;
-  width: 60px;
+  width: 64px;
   height: 3px;
   background-color: var(--accent);
   margin: 0 auto 2rem;
   border-radius: 2px;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2.1rem;
-  }
-
-  .page-content {
-    padding: 2rem 1rem;
-  }
-}
-
-/* ---------- Footer Contact ---------- */
-.site-footer {
-  background-color: var(--surface);
-}
-
-.site-footer .contact-list a {
-  font-weight: 500;
+.site-footer a {
   color: var(--accent);
+  font-weight: 500;
 }
 
-.site-footer .contact-list a:hover {
+.site-footer a:hover {
   text-decoration: underline;
 }
 
-.footer-col-wrapper {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .page-content {
+    padding: 2.2rem 1.5rem;
+    margin: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 }

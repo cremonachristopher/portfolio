@@ -8,6 +8,20 @@ header_pages:
   - projects.md
   - skills.md
 
-email: christowow130@hotmail.fr
-github_username: cremonachristopher
-linkedin_username: https://www.linkedin.com/in/christopher-cremona-b614b7398/
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - skills.md
+
+minima:
+  social_links:
+    - title: "Email"
+      icon: envelope
+      url: "mailto:christowow130@hotmail.fr"
+    - title: "GitHub"
+      icon: github
+      url: "https://github.com/cremonachristopher"
+    - title: "LinkedIn"
+      icon: linkedin
+      url: "https://www.linkedin.com/in/christopher-cremona-b614b7398/"
