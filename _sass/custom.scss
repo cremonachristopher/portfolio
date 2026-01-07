@@ -14,7 +14,13 @@
 }
 
 /* ---------- Global ---------- */
+/* ---------- Background global ---------- */
 body {
+    background: linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #f1f5f9 100%
+  );
   background-color: var(--bg);
   color: var(--text-main);
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
