@@ -148,6 +148,97 @@ footer {
     }
 }
 
+/* ===== Section Contact ===== */
+.contact {
+    padding: 80px 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #1e1e1e;
+}
+
+/* Info contact : email et réseaux */
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-info a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #ff6b6b;
+}
+
+/* Formulaire de contact */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    resize: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(255,107,107,0.3);
+    outline: none;
+}
+
+/* Bouton envoyer */
+.contact button {
+    padding: 12px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 15px;
+    }
+}
+
+
 /* Photo de profil */
 
 img {
