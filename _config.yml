@@ -1,5 +1,19 @@
+title: Christopher Cremona
+description: Portfolio professionnel – Développeur web
+url: https://cremonachristopher.github.io
+baseurl: /portfolio
 
-theme: jekyll-theme-primer
+
+markdown: kramdown
+
+
+theme: minima
+
+
+collections:
+projects:
+output: true
+permalink: /projects/:name/
 
 header_pages:
   - index.md

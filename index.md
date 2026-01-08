@@ -1,18 +1,28 @@
 ---
-layout: default
+layout: home
 title: Accueil
-description: Portfolio de Christopher Cremona, développeur web.
+description: Portfolio professionnel de Christopher Cremona
 ---
 
-# Bienvenue sur mon Portfolio
+# Christopher Cremona  
+**Développeur web**
+![Photo de Christopher Cremona](assets\images\photo.jpg)
 
-Je suis **Christopher Cremona**, développeur web.
-![Portrait de Christopher](assets/images/photo.jpg)
+Développeur web passionné par la création d’interfaces modernes, accessibles et performantes.  
+Ce portfolio présente mon parcours, mes compétences et mes réalisations.
 
-Voici mon portfolio professionnel.
+---
 
-> 🎯 Objectif : devenir développeur web.
+## À propos
+{% include about.md %}
 
-## Derniers projets
 
-- Projet 1 : [site Klivio](https://cremonachristopher.github.io/projet_kliblio/)
+---
+
+## Projets
+{% include projects.md %}
+
+---
+
+## Contact
+{% include contact.md %}

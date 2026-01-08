@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: page
 title: Projets
-description: Mes projets.
+description: Mes réalisations
 ---
 
-# Mes projets
-
-- Projet 1 : [site Klivio](https://cremonachristopher.github.io/projet_kliblio/)
+{% include projects.md %}
